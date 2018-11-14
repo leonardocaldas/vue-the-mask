@@ -34,6 +34,7 @@ export default {
   watch : {
     value (newValue) {
       if (newValue !== this.lastValue) {
+        this.lastValue = this.display
         this.display = newValue
       }
     },
